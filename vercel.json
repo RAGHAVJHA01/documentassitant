@@ -24,7 +24,9 @@
       "dest": "/app.py"
     }
   ],
-  "env": {
-    "PINECONE_API_KEY": "@pinecone_api_key"
+  "functions": {
+    "app.py": {
+      "maxDuration": 30
+    }
   }
 }
