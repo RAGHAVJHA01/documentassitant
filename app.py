@@ -8,7 +8,7 @@ import asyncio
 from typing import List, Optional
 from pydantic import BaseModel
 import aiofiles
-from main import PineconeAssistant
+from main_mock import PineconeAssistant
 import logging
 
 # Configure logging
