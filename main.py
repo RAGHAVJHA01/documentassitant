@@ -1,7 +1,6 @@
 import os
 from dotenv import load_dotenv
 from pinecone import Pinecone
-from pinecone_plugins.assistant.models.chat import Message
 import logging
 
 # Load environment variables
@@ -170,7 +169,7 @@ If you don't have specific information about a query, acknowledge it honestly an
         try:
             # Enhanced message with context and prompting
             enhanced_message = self._enhance_user_message(message)
-            msg = Message(content=enhanced_message)
+            msg = {"role": "user", "content": enhanced_message}
             
             if stream:
                 self.logger.info(f"Sending streaming message: {message[:50]}...")
@@ -286,7 +285,7 @@ If you don't have specific information about a query, acknowledge it honestly an
             message_objects = []
             for msg in messages:
                 if isinstance(msg, str):
-                    message_objects.append(Message(content=msg))
+                    message_objects.append({"role": "user", "content": msg})
                 else:
                     message_objects.append(msg)
             
