@@ -2,6 +2,8 @@
 
 A sophisticated ChatGPT-like AI assistant specialized for TATA Nexon SUV owners, built with FastAPI and Pinecone Assistant API.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/RAGHAVJHA01/documentassitant&env=PINECONE_API_KEY&envDescription=Your%20Pinecone%20API%20Key&envLink=https://github.com/RAGHAVJHA01/documentassitant#deployment)
+
 ## Features
 
 - 🚗 **Complete TATA Nexon Expertise**: Safety, maintenance, performance, and troubleshooting
@@ -12,10 +14,14 @@ A sophisticated ChatGPT-like AI assistant specialized for TATA Nexon SUV owners,
 - 🎭 **Beautiful UI**: Gradient effects, animations, and modern styling
 - 🔒 **Secure**: Environment-based API key management
 
+## 🚀 Quick Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/RAGHAVJHA01/documentassitant&env=PINECONE_API_KEY&envDescription=Your%20Pinecone%20API%20Key&envLink=https://docs.pinecone.io/docs/quickstart)
+
 ## Technologies Used
 
 - **Backend**: FastAPI, Pinecone Assistant API
-- **Frontend**: Bootstrap 5, Vanilla JavaScript
+- **Frontend**: Bootstrap 5, Vanilla JavaScript  
 - **AI**: Pinecone's Assistant with RAG capabilities
 - **Deployment**: Vercel (Serverless)
 
